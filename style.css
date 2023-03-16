@@ -25,6 +25,7 @@ body {
   display: flex;
   align-items: center;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .container input {
@@ -36,12 +37,38 @@ body {
   color: #423644;
 }
 
+.container .form button:hover {
+  background-color: #323529;
+}
+
 .container .form button {
   padding: 1rem 1rem;
   border: none;
   background-color: #7c8363;
 }
 
-.container .form button:hover {
-  background-color: #323529;
+.list .todo {
+  display: flex;
+  align-items: center;
+  background-color: #edf4f2;
+  margin: 1.5rem 0;
+  font-size: 16px;
+  border-radius: 5px;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.list .todo p {
+  color: #423644;
+  padding: 6px;
+}
+
+.list .todo button {
+  padding: 1.2rem 12px;
+  background-color: #d21500;
+  border: none;
+}
+
+.list .todo button:hover {
+  background-color: #ad1302;
 }
