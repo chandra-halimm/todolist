@@ -10,7 +10,7 @@ btn.addEventListener("click", (e) => {
                     ${input.value}
                   </p>
                   <input type="checkbox" class="check done" onclick="checkList()" />
-                  <button class="delete" id="btn">Delete</button>
+                  <button class="delete" id="btn" onclick="removeItem()">Delete</button>
               </div>
             `;
 
@@ -32,4 +32,9 @@ const checkList = () => {
   } else {
     check.style.textDecoration = "none";
   }
+};
+
+const removeItem = (el) => {
+  const todo = document.querySelector(".todo");
+  todo.remove();
 };
